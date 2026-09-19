@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Таны Жуулчны Бааз</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+    <div class="logo">🏕️ ТАНЫ БААЗ</div>
+
+    <nav class="desktop-menu">
+        <a href="#home">Нүүр</a>
+        <a href="#rooms">Байрлах</a>
+        <a href="#services">Үйлчилгээ</a>
+        <a href="#gallery">Зураг</a>
+        <a href="#contact">Холбоо барих</a>
+    </nav>
+
+    <a href="#booking" class="nav-button">
+        ЗАХИАЛАХ
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#home" onclick="toggleMenu()">Нүүр</a>
+
+    <a href="#rooms" onclick="toggleMenu()">Байрлах</a>
+
+    <a href="#services" onclick="toggleMenu()">Үйлчилгээ</a>
+
+    <a href="#gallery" onclick="toggleMenu()">Зураг</a>
+
+    <a href="#contact" onclick="toggleMenu()">Холбоо барих</a>
+
+    <a href="#booking"
+       class="mobile-booking"
+       onclick="toggleMenu()">
+        ЗАХИАЛАХ
+    </a>
+
+</div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">ТАВТАЙ МОРИЛНО УУ</p>
+
+            <h1>
+                Байгалийн дунд<br>
+                <span>мартагдашгүй амралт</span>
+            </h1>
+
+            <p class="hero-text">
+                Хотын чимээнээс холдож, байгальтай ойрхон
+                тайван амрах төгс орчин таныг хүлээж байна.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="main-button">
+                    ЗАХИАЛГА ӨГӨХ
+                </a>
+
+                <a href="#rooms" class="second-button">
+                    БАЙРЛАХ ХЭСГИЙГ ҮЗЭХ
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+
+        <div class="intro-text">
+
+            <p class="section-label">МАНАЙ БААЗ</p>
+
+            <h2>
+                Байгальтай ойрхон<br>
+                <span>амралт</span>
+            </h2>
+
+            <p>
+                Манай жуулчны бааз нь гэр бүл, найз нөхөд болон
+                аялагчдад зориулсан тав тухтай орчин, байгалийн
+                үзэсгэлэнт газрыг хослуулсан амралтын газар юм.
+            </p>
+
+            <p>
+                Цэвэр агаар, үзэсгэлэнт байгаль, Монгол гэрийн
+                уламжлалт уур амьсгалыг мэдрээрэй.
+            </p>
+
+        </div>
+
+        <div class="intro-box">
+            <div class="intro-number">01</div>
+            <h3>Тайван орчин</h3>
+            <p>
+                Байгалийн дунд нам гүм, тайван амрах боломж.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ROOMS -->
+    <section class="rooms" id="rooms">
+
+        <div class="section-heading">
+            <p class="section-label">БАЙРЛАХ ХЭСЭГ</p>
+
+            <h2>
+                Танд тохирох<br>
+                <span>байр</span>
+            </h2>
+
+            <p>
+                Тав тухтай, цэвэрхэн орчинд тухлан амраарай.
+            </p>
+        </div>
+
+
+        <div class="room-container">
+
+            <div class="room-card">
+                <div class="room-image image-one">
+                    <span>ГЭР 01</span>
+                </div>
+
+                <div class="room-info">
+                    <h3>Стандарт гэр</h3>
+
+                    <p>
+                        2–4 хүн · Тав тухтай орчин
+                    </p>
+
+                    <div class="room-bottom">
+                        <strong>180,000₮</strong>
+                        <a href="#booking">Захиалах →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="room-card">
+                <div class="room-image image-two">
+                    <span>ГЭР 02</span>
+                </div>
+
+                <div class="room-info">
+                    <h3>Family гэр</h3>
+
+                    <p>
+                        4–6 хүн · Гэр бүлд тохиромжтой
+                    </p>
+
+                    <div class="room-bottom">
+                        <strong>250,000₮</strong>
+                        <a href="#booking">Захиалах →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="room-card">
+                <div class="room-image image-three">
+                    <span>VIP 03</span>
+                </div>
+
+                <div class="room-info">
+                    <h3>VIP гэр</h3>
+
+                    <p>
+                        2–4 хүн · Илүү тав тухтай
+                    </p>
+
+                    <div class="room-bottom">
+                        <strong>350,000₮</strong>
+                        <a href="#booking">Захиалах →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+
+        <div class="section-heading">
+            <p class="section-label">ҮЙЛЧИЛГЭЭ</p>
+
+            <h2>
+                Амралтаа<br>
+                <span>илүү дурсамжтай</span> болгоорой
+            </h2>
+        </div>
+
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="service-icon">🐎</div>
+                <h3>Морь унах</h3>
+                <p>Байгалийн сайхныг морьтой аялж мэдрээрэй.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🍖</div>
+                <h3>Монгол хоол</h3>
+                <p>Амтат уламжлалт Монгол хоолны сонголтууд.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>Галын наадам</h3>
+                <p>Оройн цагаар найз нөхөдтэйгөө дурсамж бүтээгээрэй.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🥾</div>
+                <h3>Аялал</h3>
+                <p>Байгалийн үзэсгэлэнт газруудаар аялна.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+
+        <div class="section-heading">
+            <p class="section-label">ЗУРГИЙН ЦОМОГ</p>
+
+            <h2>
+                Манай баазын<br>
+                <span>уур амьсгал</span>
+            </h2>
+        </div>
+
+
+        <div class="gallery-container">
+
+            <div class="gallery-item gallery-one"></div>
+            <div class="gallery-item gallery-two"></div>
+            <div class="gallery-item gallery-three"></div>
+            <div class="gallery-item gallery-four"></div>
+
+        </div>
+
+    </section>
+
+
+   <section class="booking" id="booking">
+
+    <div class="booking-content">
+
+        <p class="section-label">ЗАХИАЛГА</p>
+
+        <h2>
+            Амралтаа<br>
+            <span>одоо төлөвлөөрэй.</span>
+        </h2>
+
+        <p>
+            Хүссэн огноо болон байрлах хэсгээ сонгон
+            захиалгын хүсэлтээ илгээнэ үү.
+        </p>
+
+    </div>
+
+
+    <div class="booking-form">
+
+        <div class="form-group">
+            <label>Ирэх өдөр</label>
+            <input type="date" id="checkin">
+        </div>
+
+
+        <div class="form-group">
+            <label>Буцах өдөр</label>
+            <input type="date" id="checkout">
+        </div>
+
+
+        <div class="form-group">
+            <label>Зочдын тоо</label>
+
+            <select id="guests">
+                <option value="1">1 хүн</option>
+                <option value="2">2 хүн</option>
+                <option value="3">3 хүн</option>
+                <option value="4">4 хүн</option>
+                <option value="5">5 хүн</option>
+                <option value="6">6 хүн</option>
+                <option value="7">7 хүн</option>
+                <option value="8">8 хүн</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label>Байр сонгох</label>
+
+            <select id="room">
+                <option value="">Байр сонгоно уу</option>
+                <option>Стандарт гэр</option>
+                <option>Family гэр</option>
+                <option>VIP гэр</option>
+            </select>
+        </div>
+
+
+        <div class="form-group full-width">
+            <label>Нэр</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Таны нэр"
+            >
+        </div>
+
+
+        <div class="form-group full-width">
+            <label>Утасны дугаар</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="9999-9999"
+            >
+        </div>
+
+
+        <button
+            type="button"
+            class="booking-button"
+            onclick="submitBooking()"
+        >
+            ЗАХИАЛГЫН ХҮСЭЛТ ИЛГЭЭХ →
+        </button>
+
+        <p id="booking-message"></p>
+
+    </div>
+
+</section>
+
+
+    <!-- CONTACT -->
+    <footer id="contact">
+
+        <div class="footer-logo">
+            🏕️ ТАНЫ БААЗ
+        </div>
+
+        <div class="footer-info">
+            <p>📍 Монгол Улс</p>
+            <p>📞 +976 9999-9999</p>
+            <p>✉️ info@yourcamp.mn</p>
+        </div>
+
+        <div class="copyright">
+            © 2026 Таны Бааз. Бүх эрх хуулиар хамгаалагдсан.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
